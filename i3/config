@@ -43,8 +43,8 @@ bindsym $mod+Return exec sakura
 bindsym $mod+l exec gnome-screensaver-command -l 
 bindsym $mod+Shift+Return exec firefox 
 bindsym $mod+Shift+p exec pcmanfm 
-bindsym $mod+Print exec ~/bin/screenshot.sh 
-bindsym $mod+Shift+Print exec ~/bin/screenshot_interactive.sh 
+bindsym $mod+Print exec gnome-screenshot -f ~/Imagens/$(date +%Y-%m-%d-%H-%M-%S)-christos.png 
+bindsym $mod+Shift+Print exec gnome-screenshot -a -f ~/Imagens/$(date +%Y-%m-%d-%H-%M-%S)-christos.png 
 
 # kill focused window
 bindsym $mod+q kill

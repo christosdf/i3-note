@@ -52,6 +52,5 @@ TEXT
   { "full_text" : "MemFree ${memfree}" , "color" :${if_match ${memfree}<1G}"\#ffffff"${else}"\#ff0000"${endif} }, 
   { "full_text" : "SwapFree ${swapfree}" , "color" :"\#ffffff" }, 
   { "full_text" : "Bat ${battery_short}" , "color" :"\#B0C4DE" }, 
-  { "full_text" : "${battery_time}" , "color" :"\#B0C4DE" }, 
   { "full_text" : "${time %d/%b/%y %k:%M }", "separator": false, "separator_block_width":3, "color":"\#ffcfaf"}
  ],
